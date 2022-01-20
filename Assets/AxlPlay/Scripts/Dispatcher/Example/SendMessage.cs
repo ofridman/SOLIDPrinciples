@@ -9,5 +9,7 @@ public class SendMessage : MonoBehaviour
     void Start()
     {
         MessageDispatcher.SendMessage(gameObject, ConstData.COLOR, gameObject.GetComponent<MeshRenderer>().material, 4f);
+        var c = gameObject.GetComponent<CapsuleCollider>();
+        c.isTrigger = true;
     }
 }

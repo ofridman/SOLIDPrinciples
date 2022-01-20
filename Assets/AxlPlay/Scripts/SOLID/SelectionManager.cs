@@ -36,6 +36,11 @@ public class SelectionManager : SelectionManagerBase // , IRayProvider
 
     }
 
+    private void Start()
+    {
+        var obj = SingletonTest.Instance.player;
+    }
+
     private void Update()
     {
         if (_currentSelection != null)
